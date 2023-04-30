@@ -1,0 +1,29 @@
+digraph NFA {
+	rankdir=LR
+	"" -> S0
+	"" [shape=none]
+	S3 -> S4 [label=A]
+	S6 -> S7 [label=B]
+	S2 -> S3 [label="ε"]
+	S4 -> S6 [label="ε"]
+	S12 -> S13 [label=A]
+	S15 -> S16 [label=B]
+	S11 -> S12 [label="ε"]
+	S11 -> S15 [label="ε"]
+	S13 -> S17 [label="ε"]
+	S16 -> S17 [label="ε"]
+	S10 -> S18 [label="ε"]
+	S10 -> S11 [label="ε"]
+	S17 -> S18 [label="ε"]
+	S17 -> S11 [label="ε"]
+	S1 -> S2 [label="ε"]
+	S7 -> S10 [label="ε"]
+	S22 -> S23 [label=A]
+	S25 -> S26 [label=B]
+	S21 -> S22 [label="ε"]
+	S23 -> S25 [label="ε"]
+	S0 -> S1 [label="ε"]
+	S18 -> S21 [label="ε"]
+	S26 [peripheries=2]
+	fontsize=20 label="\n\nNFA" labelloc=b
+}

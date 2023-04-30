@@ -1,0 +1,17 @@
+digraph DFA {
+	rankdir=LR
+	"" -> "{S1, S0, S3, S2}"
+	"" [shape=none]
+	"{S1, S0, S3, S2}" -> "{S4, S6}" [label=A]
+	"{S4, S6}" -> "{S21, S10, S15, S18, S12, S22, S7, S11}" [label=B]
+	"{S21, S10, S15, S18, S12, S22, S7, S11}" -> "{S16, S21, S15, S18, S12, S22, S11, S17}" [label=B]
+	"{S21, S10, S15, S18, S12, S22, S7, S11}" -> "{S21, S15, S23, S18, S12, S22, S13, S11, S25, S17}" [label=A]
+	"{S21, S15, S23, S18, S12, S22, S13, S11, S25, S17}" -> "{S16, S21, S26, S15, S18, S12, S22, S11, S17}" [label=B]
+	"{S21, S15, S23, S18, S12, S22, S13, S11, S25, S17}" -> "{S21, S15, S23, S18, S12, S22, S13, S11, S25, S17}" [label=A]
+	"{S16, S21, S26, S15, S18, S12, S22, S11, S17}" -> "{S16, S21, S15, S18, S12, S22, S11, S17}" [label=B]
+	"{S16, S21, S26, S15, S18, S12, S22, S11, S17}" -> "{S21, S15, S23, S18, S12, S22, S13, S11, S25, S17}" [label=A]
+	"{S16, S21, S15, S18, S12, S22, S11, S17}" -> "{S16, S21, S15, S18, S12, S22, S11, S17}" [label=B]
+	"{S16, S21, S15, S18, S12, S22, S11, S17}" -> "{S21, S15, S23, S18, S12, S22, S13, S11, S25, S17}" [label=A]
+	"{S16, S21, S26, S15, S18, S12, S22, S11, S17}" [peripheries=2]
+	fontsize=20 label="\n\nDFA" labelloc=b
+}

@@ -1,0 +1,17 @@
+digraph DFAClean {
+	rankdir=LR
+	"" -> S4
+	"" [shape=none]
+	S4 -> S2 [label=A]
+	S2 -> S3 [label=B]
+	S3 -> S5 [label=B]
+	S3 -> S1 [label=A]
+	S1 -> S1 [label=A]
+	S1 -> S0 [label=B]
+	S0 -> S5 [label=B]
+	S0 -> S1 [label=A]
+	S5 -> S5 [label=B]
+	S5 -> S1 [label=A]
+	S0 [peripheries=2]
+	fontsize=20 label="\n\nDFA Clean" labelloc=b
+}

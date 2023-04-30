@@ -1,0 +1,15 @@
+digraph MDFA {
+	rankdir=LR
+	"" -> S3
+	"" [shape=none]
+	S3 -> S0 [label=A]
+	S0 -> S1 [label=B]
+	S1 -> S1 [label=B]
+	S1 -> S2 [label=A]
+	S2 -> S2 [label=A]
+	S2 -> S4 [label=B]
+	S4 -> S1 [label=B]
+	S4 -> S2 [label=A]
+	S4 [peripheries=2]
+	fontsize=20 label="\n\nMinimized DFA" labelloc=b
+}
